@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(255, 4, 87);
+    font-family: 'Dancing Script', cursive;
+}
+
+.time {
+    color: rgb(255, 4, 88);
+    font-size: 20px;
+}
+
+
+.current_word {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.main {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.swal-text {
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 80%;
+    padding: 15px 10px;
+    border: 2px solid rgba(218, 216, 216, 0.678);
+    border-radius: 5px;
+    transition: 0.2s;
+    outline: none;
+}
+
+.form-control:focus {
+    border: 2px solid rgba(255, 4, 88, 0.678);
+}
+
+
+.swal-button, .result_btn {
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 4, 88);
+  font-size: 12px;
+  border: 1px solid rgba(255, 4, 88, 0.74);
+  transition: 0.2s;
+}
+
+.swal-button:not([disabled]):hover {
+    background-color: rgba(255, 4, 88, 0.74);
+    border: 1px solid rgba(255, 4, 88, 0.74);
+}
+
+.swal-button:focus {
+    box-shadow: none;
+}

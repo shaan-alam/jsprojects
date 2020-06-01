@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <title>Filterable list in JS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My <span style="color: #e52635;">Booklist</span> app</h1>
+        </header>
+
+        <div class="form-area">
+            <form action="">
+                <input type="text" placeholder="Book name" class="form-control" id="book-name">
+                <input type="number" placeholder="Book Price" class="form-control" id="book-price">
+                <button class="form-control-btn" id="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <table>
+            <tr>
+                <th>S.no</th>
+                <th>Book Name</th>
+                <th>Book Price</th>
+                <th>Actions</th>
+            </tr>
+            
+        </table>
+
+        <div class="alert-danger">No books to show</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

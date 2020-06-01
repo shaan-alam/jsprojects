@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Pallete</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-block" id="first">
+        <h1 id="hex-code">#3498db</h1>
+        <button class="btn" id="change-color">New Color</button>
+        <button class="btn" id="copy-btn">Copy</button>
+        <span class="lock"
+          ><i data-locked="false" class="fa fa-unlock"></i
+        ></span>
+      </div>
+      <div class="color-block" id="second">
+        <h1 id="hex-code">#3498db</h1>
+        <button class="btn" id="change-color">New Color</button>
+        <button class="btn" id="copy-btn">Copy</button>
+        <span class="lock"
+          ><i data-locked="false" class="fa fa-unlock"></i
+        ></span>
+      </div>
+      <div class="color-block" id="third">
+        <h1 id="hex-code">#3498db</h1>
+        <button class="btn" id="change-color">New Color</button>
+        <button class="btn" id="copy-btn">Copy</button>
+        <span class="lock"
+          ><i data-locked="false" class="fa fa-unlock"></i
+        ></span>
+      </div>
+      <div class="color-block" id="fourth">
+        <h1 id="hex-code">#3498db</h1>
+        <button class="btn" id="change-color">New Color</button>
+        <button class="btn" id="copy-btn">Copy</button>
+        <span class="lock"
+          ><i data-locked="false" class="fa fa-unlock"></i
+        ></span>
+      </div>
+      <div class="color-block" id="fifth">
+        <h1 id="hex-code">#3498db</h1>
+        <button class="btn" id="change-color">New Color</button>
+        <button class="btn" id="copy-btn">Copy</button>
+        <span class="lock"
+          ><i data-locked="false" class="fa fa-unlock"></i
+        ></span>
+      </div>
+    </div>
+
+    <div class="main">
+      <button class="btn" id="mix-btn">Mix Up!</button>
+      <button class="btn" id="save-btn">Save pallete</button>
+    </div>
+
+    <div class="bg animated fadeIn">
+      <div class="modal animated bounceIn">
+        <span class="close">&times;</span>
+        <h2>Save your pallete</h2>
+        <div class="showcase">
+          <div title=""></div>
+          <div title=""></div>
+          <div title=""></div>
+          <div title=""></div>
+          <div title=""></div>
+        </div>
+        <input type="text" placeholder="Pallette name" id="pallette-name" />
+        <span id="message">Please fill the name of your pallette</span>
+        <button class="btn" id="save-pallette">Save!</button>
+      </div>
+    </div>
+
+
+    <div class="success-msg-hide animated">
+      <h1 class="animated bounceIn">Copied!!!</h1>
+      <h2 class="animated bounceIn">#3498db</h2>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

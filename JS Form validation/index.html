@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Corona tracker</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/sa2.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sign Up Here..</h1>
+
+        <form action="">
+            <div class="ui-field">
+                <input type="text" class="form-control" placeholder="Full Name" id="fullname">
+                <span class="error" id="error-fullname">Please enter the first name</span>                
+            </div>
+
+            
+
+            <div class="ui-field">
+                <input type="text" class="form-control" placeholder="Email" id="email">
+                <span class="error" id="error-email">Please enter a valid email</span>
+            </div>
+
+            <div class="ui-field">
+                <input type="password" class="form-control" placeholder="Password" id="password">
+            </div>
+
+            <div class="ui-field">
+                <input type="password" class="form-control" placeholder="Confirm Password" id="confirm-password">
+                <span class="error" id="error-password">The Two passwords do not match!</span>
+            </div>
+
+            <div class="ui-field">
+                <input type="date" class="form-control" id="birth-date">
+                <span class="error" id="error-birth-date">You are not 18+ !</span>
+            </div>
+
+            <div class="ui-field">
+                <button class="submit" id="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/sa2.js"></script>
+    <script src="js/index.min.js"></script>
+</html>

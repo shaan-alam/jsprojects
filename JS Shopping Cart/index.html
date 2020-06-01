@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/sa2.css" />
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="cart-link" href="#cart-window"
+                >Cart <span class="badge badge-danger cart-size">0</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Add Items to the stock</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main area grid -->
+    <div class="container my-5">
+      <h2 class="display-4 text-center">Today's deals....</h2>
+
+      <!-- A row -->
+      <div class="row my-3"></div>
+    </div>
+
+    <!-- cart-window -->
+
+    <div id="cart-window">
+      <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+      <div id="btn-close-modal" class="close-cart-window">
+          <h3 class="text-center my-3">My Cart <span class="close-cart">&times;</span></h3>
+      </div>
+
+      <div class="modal-content">
+        <!--Your modal content goes here-->
+        <div class="container">
+            <div class="row">
+                <!-- An item -->
+                <!-- <div class="col-4">
+                    <div class="card m-2" style="width: 18rem;">
+                        <img class="card-img-top p-4" src="img/key.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Keyboard</h4>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ratione? </p>
+                            <div class="actions">
+                                <button class="btn btn-sm btn-primary" id="addtocart">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>                
+                </div>    -->
+                <!-- Item ends here  -->
+
+                <!-- an item -->
+                                 
+                
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+        <footer class="footer">
+            <div class="container text-right d-block">
+                <h2>Total Price : $ <span id="price-placeholder">230</span></h2>
+                <button class="btn btn-success">Proceed</button>
+            </div>
+        </footer>
+    </div>
+    <!-- modal content ends -->
+
+    <script src="js/index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/sa2.js"></script>
+    <script src="js/animatedModal.js"></script>
+
+    <script>
+      $("#cart-link").animatedModal({
+        animatedIn: "bounceIn",
+        animatedOut: "bounceOut",
+        color: "#fff"
+      });
+    </script>
+  </body>
+</html>

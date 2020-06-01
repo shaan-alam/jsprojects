@@ -1,0 +1,12 @@
+.close-cart {
+    font-size: 2rem !important;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+}
+
+.modal-content {
+    margin: 50px 0;
+    padding: 20px;
+    border: none;
+}

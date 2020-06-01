@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing game</title>
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sa2.css">
+
+</head>
+<body>
+    <div class="container">
+        <header class="bg-secondary text-center p-3 mb-5">
+            <h1 class="heading">Know your Typing Speed</h1>
+        </header>
+        <div class="main">
+            <h1 id="current-word" class="current_word"></h1>
+            <input type="text" placeholder="Enter the word here" class="form-control" id="input">
+            <p class="text-center my-3"><span class="display-4 text-warning time"></span></p>
+            <button id="result-btn" class="btn">Check your results</button>   
+            <select id="select-list" class="form-control" title="Duration">
+                <option>1 min</option>
+                <option>2 min</option>
+                <option>4 min</option>
+                <option>7 min</option>
+                <option>10 min</option>
+            </select>
+            <button class="btn" id="start-btn">Start Game</button>
+            <h4>High Score : <span id="highscore">N/A</span></h4>
+        </div>
+    </div>    
+    <script src="js/sa2.js"></script>
+    <script src="js/script.js"></script>
+</html>

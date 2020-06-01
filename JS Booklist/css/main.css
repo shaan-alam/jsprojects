@@ -1,0 +1,98 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  line-height: 1.6rem;
+  font-weight: normal;
+}
+
+/* Container */
+
+.container {
+  width: 80%;
+  text-align: center;
+  margin: 40px auto;
+  overflow: hidden;
+}
+/* TABLE */
+
+table {
+  display: none;
+  width: 100%;
+  margin: 40px auto;
+}
+
+table tr td, tr th {
+  padding: 10px 20px;
+  text-align: center;
+}
+tr th {
+  color: #eee;
+  background: #656edb;
+}
+
+tr:nth-child(even) {
+  color: #e52635;
+}
+
+tr:nth-child(odd) {
+  background: #e52635;
+  color: #fff;
+}
+
+/* FORM */
+form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-control {
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  flex: 1;
+  padding: 14px 15px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: 0.3s ease-in-out;
+}
+
+.form-control:nth-child(1) {
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  margin-right: 10px;
+}
+
+
+.form-control:focus { 
+  border: 2px solid #36312f;
+}
+
+.form-control-btn {
+  padding: 10px 20px;
+  border: none;
+  background: linear-gradient(to right, #e52636e5, #ff0015, #e52636e0);
+  color: #fff;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  outline: none;
+}
+
+.alert-danger {
+  width: 85%;
+  background: #e52636af;
+  color: #fff;
+  padding: 20px 40px;
+  margin: 20px 0;
+  text-align: center;
+  border-radius: 4px;
+  margin: auto;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background: #656edb;
+  color: #fff;
+  border: none;
+}
