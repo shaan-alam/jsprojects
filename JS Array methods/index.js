@@ -12,7 +12,7 @@ const comments = [
 const public = [
   { name: 'Shaan Alam', year: 2002 },
   { name: 'Lavi', year: 2002 },
-  { name: 'Aishwarya', year: 1870 },
+  { name: 'John Doe', year: 1870 },
   { name: 'Scarlet Johanson', year: 1976 },
   { name: 'Robert Downey jr', year: 1989 },
   { name: 'Chris Hemsworth', year: 2020 }
